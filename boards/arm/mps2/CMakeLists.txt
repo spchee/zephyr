@@ -1,7 +1,5 @@
+# Copyright 2025 Arm Limited and/or its affiliates <open-source-office@arm.com>
 # SPDX-License-Identifier: Apache-2.0
-
-zephyr_library()
-zephyr_library_sources(pinmux.c)
 
 if(CONFIG_BOARD_MPS2_AN521_CPU1 AND NOT CONFIG_OPENAMP)
   # Building a firmware image for CPU1: this requires a binary
